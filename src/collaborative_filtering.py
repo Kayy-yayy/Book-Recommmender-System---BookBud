@@ -29,21 +29,50 @@ class CollaborativeFilteringRecommender:
         self.item_similarity = None
         self.user_means = None
         
-    def create_matrices(self):
-        """Create user-item and item-user matrices for collaborative filtering."""
-        print("Creating user-item matrix...")
+    def create_matrices(self, min_user_ratings=20, min_book_ratings=10):
+        """
+        Create item-user and user-item matrices for collaborative filtering.
         
-        # Create the user-item matrix
-        self.user_item_matrix = self.ratings_df.pivot(
-            index='User-ID', 
-            columns='ISBN', 
+        Parameters:
+        -----------
+        min_user_ratings : int
+            Minimum number of ratings a user must have to be included
+        min_book_ratings : int
+            Minimum number of ratings a book must have to be included
+        """
+        print("Filtering users and books based on rating counts...")
+        
+        # Count ratings per user and per book
+        user_rating_counts = self.ratings_df['User-ID'].value_counts()
+        book_rating_counts = self.ratings_df['ISBN'].value_counts()
+        
+        # Filter users and books that meet the minimum rating criteria
+        qualified_users = user_rating_counts[user_rating_counts >= min_user_ratings].index
+        qualified_books = book_rating_counts[book_rating_counts >= min_book_ratings].index
+        
+        print(f"Found {len(qualified_users)} users with at least {min_user_ratings} ratings")
+        print(f"Found {len(qualified_books)} books with at least {min_book_ratings} ratings")
+        
+        # Filter the ratings dataframe to only include qualified users and books
+        filtered_ratings = self.ratings_df[
+            (self.ratings_df['User-ID'].isin(qualified_users)) & 
+            (self.ratings_df['ISBN'].isin(qualified_books))
+        ]
+        
+        print(f"Filtered ratings dataset contains {len(filtered_ratings)} ratings")
+        
+        # Create the item-user matrix (books in rows, users in columns)
+        print("Creating item-user matrix with books as rows and users as columns...")
+        self.item_user_matrix = filtered_ratings.pivot(
+            index='ISBN',
+            columns='User-ID',
             values='Book-Rating'
         ).fillna(0)
         
-        # Create the item-user matrix (transpose of user-item matrix)
-        self.item_user_matrix = self.user_item_matrix.T
+        # Create the user-item matrix (transpose of item-user matrix)
+        self.user_item_matrix = self.item_user_matrix.T
         
-        print(f"Created user-item matrix with shape {self.user_item_matrix.shape}")
+        print(f"Created item-user matrix with shape {self.item_user_matrix.shape}")
         return self
     
     def compute_user_similarity(self):
@@ -96,9 +125,18 @@ class CollaborativeFilteringRecommender:
         
         return self
     
-    def fit(self):
-        """Fit the collaborative filtering model."""
-        return (self.create_matrices()
+    def fit(self, min_user_ratings=20, min_book_ratings=10):
+        """
+        Fit the collaborative filtering model.
+        
+        Parameters:
+        -----------
+        min_user_ratings : int
+            Minimum number of ratings a user must have to be included
+        min_book_ratings : int
+            Minimum number of ratings a book must have to be included
+        """
+        return (self.create_matrices(min_user_ratings, min_book_ratings)
                 .compute_user_similarity()
                 .compute_item_similarity()
                 .compute_user_means())
@@ -363,7 +401,7 @@ if __name__ == "__main__":
         preprocessor.ratings_processed,
         preprocessor.books_processed
     )
-    recommender.fit()
+    recommender.fit(min_user_ratings=20, min_book_ratings=10)
     
     # Get recommendations for a user
     test_user = preprocessor.ratings_processed['User-ID'].iloc[0]

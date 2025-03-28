@@ -64,6 +64,9 @@ class DataPreprocessor:
         # Drop duplicates based on ISBN
         self.books_processed.drop_duplicates(subset=['ISBN'], inplace=True)
         
+        # Remove duplicate books with the same title and author (keep only the first occurrence)
+        self.books_processed.drop_duplicates(subset=['Book-Title', 'Book-Author'], keep='first', inplace=True)
+        
         # Fill missing values
         self.books_processed['Book-Title'] = self.books_processed['Book-Title'].fillna('Unknown Title')
         self.books_processed['Book-Author'] = self.books_processed['Book-Author'].fillna('Unknown Author')

@@ -52,6 +52,8 @@ class ContentBasedRecommender:
         self.cosine_sim = cosine_similarity(self.tfidf_matrix, self.tfidf_matrix)
         
         # Create a Series with ISBN as index and position as value
+        # Reset the DataFrame index to ensure indices match the tfidf_matrix
+        self.books_df = self.books_df.reset_index(drop=True)
         self.indices = pd.Series(self.books_df.index, index=self.books_df['ISBN'])
         
         return self
@@ -72,8 +74,8 @@ class ContentBasedRecommender:
         pandas.DataFrame
             DataFrame containing the recommended books
         """
-        # Check if the book exists in our dataset
-        if book_isbn not in self.indices.index:
+        # Check if the ISBN exists in our dataset
+        if book_isbn not in self.indices:
             print(f"Book with ISBN {book_isbn} not found in the dataset.")
             return pd.DataFrame()
         
@@ -86,14 +88,19 @@ class ContentBasedRecommender:
         # Sort books by similarity score
         sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
         
-        # Get top n most similar books (excluding the input book)
+        # Get top n most similar books (excluding the book itself)
         sim_scores = sim_scores[1:n+1]
         
         # Get book indices
         book_indices = [i[0] for i in sim_scores]
         
-        # Return the top n similar books
-        return self.books_df.iloc[book_indices].copy()
+        # Check if any index is out of bounds
+        valid_indices = [i for i in book_indices if i < len(self.books_df)]
+        if len(valid_indices) < len(book_indices):
+            print(f"Warning: Some indices were out of bounds. Returning {len(valid_indices)} recommendations instead of {n}.")
+        
+        # Return the books
+        return self.books_df.iloc[valid_indices]
     
     def get_recommendations_by_title(self, title, n=10):
         """
@@ -203,7 +210,7 @@ class ContentBasedRecommender:
             DataFrame containing the recommended books
         """
         # Check if the book exists in our dataset
-        if book_isbn not in self.indices.index:
+        if book_isbn not in self.indices:
             print(f"Book with ISBN {book_isbn} not found in the dataset.")
             return pd.DataFrame()
         

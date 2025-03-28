@@ -1,0 +1,162 @@
+[
+  {
+    "ISBN": "0064400018",
+    "title": "Little House in the Big Woods",
+    "author": "Laura Ingalls Wilder",
+    "year": 1953,
+    "Publisher": "HarperTrophy",
+    "image_url": "http://images.amazon.com/images/P/0064400018.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0064400026",
+    "title": "Little House on the Prairie",
+    "author": "Laura Ingalls Wilder",
+    "year": 1953,
+    "Publisher": "HarperTrophy",
+    "image_url": "http://images.amazon.com/images/P/0064400026.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0316781010",
+    "title": "Fortune's Rocks: A Novel",
+    "author": "Anita Shreve",
+    "year": 1999,
+    "Publisher": "Back Bay Books",
+    "image_url": "http://images.amazon.com/images/P/0316781010.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0142004235",
+    "title": "East of Eden (Oprah's Book Club)",
+    "author": "John Steinbeck",
+    "year": 2003,
+    "Publisher": "Penguin Books",
+    "image_url": "http://images.amazon.com/images/P/0142004235.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0060391626",
+    "title": "I Know This Much Is True (Oprah's Book Club)",
+    "author": "Wally Lamb",
+    "year": 1998,
+    "Publisher": "Regan Books",
+    "image_url": "http://images.amazon.com/images/P/0060391626.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0060938455",
+    "title": "Fast Food Nation: The Dark Side of the All-American Meal",
+    "author": "Eric Schlosser",
+    "year": 2002,
+    "Publisher": "Perennial",
+    "image_url": "http://images.amazon.com/images/P/0060938455.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0064471101",
+    "title": "The Magician's Nephew (rack) (Narnia)",
+    "author": "C. S. Lewis",
+    "year": 2002,
+    "Publisher": "HarperCollins",
+    "image_url": "http://images.amazon.com/images/P/0064471101.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0140042598",
+    "title": "On the Road",
+    "author": "Jack Kerouac",
+    "year": 1991,
+    "Publisher": "Penguin Books",
+    "image_url": "http://images.amazon.com/images/P/0140042598.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "014131088X",
+    "title": "Speak",
+    "author": "Laurie Halse Anderson",
+    "year": 2001,
+    "Publisher": "Speak",
+    "image_url": "http://images.amazon.com/images/P/014131088X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "034540288X",
+    "title": "The Lost World",
+    "author": "Michael Crichton",
+    "year": 1996,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/034540288X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0373483503",
+    "title": "Macgregor Brides (Macgregors)",
+    "author": "Nora Roberts",
+    "year": 1997,
+    "Publisher": "Silhouette",
+    "image_url": "http://images.amazon.com/images/P/0373483503.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0373484232",
+    "title": "Stanislaski Sisters",
+    "author": "Nora Roberts",
+    "year": 2001,
+    "Publisher": "Silhouette",
+    "image_url": "http://images.amazon.com/images/P/0373484232.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0375758992",
+    "title": "Don't Let's Go to the Dogs Tonight : An African Childhood",
+    "author": "ALEXANDRA FULLER",
+    "year": 2003,
+    "Publisher": "Random House Trade Paperbacks",
+    "image_url": "http://images.amazon.com/images/P/0375758992.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "038542471X",
+    "title": "The Client",
+    "author": "John Grisham",
+    "year": 1993,
+    "Publisher": "Doubleday Books",
+    "image_url": "http://images.amazon.com/images/P/038542471X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0399142282",
+    "title": "Hornet's Nest",
+    "author": "Patricia Daniels Cornwell",
+    "year": 1997,
+    "Publisher": "Putnam Publishing Group",
+    "image_url": "http://images.amazon.com/images/P/0399142282.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0425180964",
+    "title": "The Bear and the Dragon (Jack Ryan Novels)",
+    "author": "Tom Clancy",
+    "year": 2001,
+    "Publisher": "Berkley Publishing Group",
+    "image_url": "http://images.amazon.com/images/P/0425180964.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0440204887",
+    "title": "Illusions: The Adventures of a Reluctant Messiah",
+    "author": "Richard Bach",
+    "year": 1994,
+    "Publisher": "Dell Publishing Company",
+    "image_url": "http://images.amazon.com/images/P/0440204887.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0440967694",
+    "title": "The Outsiders",
+    "author": "S. E. Hinton",
+    "year": 1993,
+    "Publisher": "Learning Curve",
+    "image_url": "http://images.amazon.com/images/P/0440967694.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0446605409",
+    "title": "Plum Island",
+    "author": "Nelson DeMille",
+    "year": 1998,
+    "Publisher": "Warner Books",
+    "image_url": "http://images.amazon.com/images/P/0446605409.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0449005615",
+    "title": "Seabiscuit: An American Legend",
+    "author": "LAURA HILLENBRAND",
+    "year": 2002,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/0449005615.01.MZZZZZZZ.jpg"
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "ISBN": "0684853515",
+    "title": "Hearts In Atlantis : New Fiction",
+    "author": "Stephen King",
+    "year": 1999,
+    "Publisher": "Scribner",
+    "image_url": "http://images.amazon.com/images/P/0684853515.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0373484232",
+    "title": "Stanislaski Sisters",
+    "author": "Nora Roberts",
+    "year": 2001,
+    "Publisher": "Silhouette",
+    "image_url": "http://images.amazon.com/images/P/0373484232.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "051511779X",
+    "title": "Born in Shame",
+    "author": "Nora Roberts",
+    "year": 1996,
+    "Publisher": "Jove Books",
+    "image_url": "http://images.amazon.com/images/P/051511779X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0312924585",
+    "title": "Silence of the Lambs",
+    "author": "Thomas Harris",
+    "year": 1991,
+    "Publisher": "St. Martin's Press",
+    "image_url": "http://images.amazon.com/images/P/0312924585.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0060175400",
+    "title": "The Poisonwood Bible",
+    "author": "Barbara Kingsolver",
+    "year": 1999,
+    "Publisher": "HarperCollins",
+    "image_url": "http://images.amazon.com/images/P/0060175400.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "006019491X",
+    "title": "Daughter of Fortune : A Novel (Oprah's Book Club (Hardcover))",
+    "author": "Isabel Allende",
+    "year": 1999,
+    "Publisher": "HarperCollins",
+    "image_url": "http://images.amazon.com/images/P/006019491X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0060199652",
+    "title": "Prodigal Summer",
+    "author": "Barbara Kingsolver",
+    "year": 2000,
+    "Publisher": "HarperCollins",
+    "image_url": "http://images.amazon.com/images/P/0060199652.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0060938455",
+    "title": "Fast Food Nation: The Dark Side of the All-American Meal",
+    "author": "Eric Schlosser",
+    "year": 2002,
+    "Publisher": "Perennial",
+    "image_url": "http://images.amazon.com/images/P/0060938455.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "006099486X",
+    "title": "The Professor and the Madman: A Tale of Murder, Insanity, and the Making of The Oxford English Dictionary",
+    "author": "Simon Winchester",
+    "year": 1999,
+    "Publisher": "Perennial",
+    "image_url": "http://images.amazon.com/images/P/006099486X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0064471101",
+    "title": "The Magician's Nephew (rack) (Narnia)",
+    "author": "C. S. Lewis",
+    "year": 2002,
+    "Publisher": "HarperCollins",
+    "image_url": "http://images.amazon.com/images/P/0064471101.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0064472272",
+    "title": "Angus, Thongs and Full-Frontal Snogging: Confessions of Georgia Nicolson",
+    "author": "Louise Rennison",
+    "year": 2001,
+    "Publisher": "HarperTempest",
+    "image_url": "http://images.amazon.com/images/P/0064472272.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0140042598",
+    "title": "On the Road",
+    "author": "Jack Kerouac",
+    "year": 1991,
+    "Publisher": "Penguin Books",
+    "image_url": "http://images.amazon.com/images/P/0140042598.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "014131088X",
+    "title": "Speak",
+    "author": "Laurie Halse Anderson",
+    "year": 2001,
+    "Publisher": "Speak",
+    "image_url": "http://images.amazon.com/images/P/014131088X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0142004235",
+    "title": "East of Eden (Oprah's Book Club)",
+    "author": "John Steinbeck",
+    "year": 2003,
+    "Publisher": "Penguin Books",
+    "image_url": "http://images.amazon.com/images/P/0142004235.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0316096199",
+    "title": "Lucky : A Memoir",
+    "author": "Alice Sebold",
+    "year": 2002,
+    "Publisher": "Back Bay Books",
+    "image_url": "http://images.amazon.com/images/P/0316096199.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0345361792",
+    "title": "A Prayer for Owen Meany",
+    "author": "John Irving",
+    "year": 1990,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/0345361792.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "034536676X",
+    "title": "The World According to Garp",
+    "author": "John Irving",
+    "year": 1994,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/034536676X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "034540288X",
+    "title": "The Lost World",
+    "author": "Michael Crichton",
+    "year": 1996,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/034540288X.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0345413881",
+    "title": "Dr. Death (Alex Delaware Novels (Paperback))",
+    "author": "Jonathan Kellerman",
+    "year": 2001,
+    "Publisher": "Ballantine Books",
+    "image_url": "http://images.amazon.com/images/P/0345413881.01.MZZZZZZZ.jpg"
+  },
+  {
+    "ISBN": "0375758992",
+    "title": "Don't Let's Go to the Dogs Tonight : An African Childhood",
+    "author": "ALEXANDRA FULLER",
+    "year": 2003,
+    "Publisher": "Random House Trade Paperbacks",
+    "image_url": "http://images.amazon.com/images/P/0375758992.01.MZZZZZZZ.jpg"
+  }
+]
